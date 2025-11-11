@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>30th Wedding Anniversary Tribute</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fffaf5;
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      position: relative;
+      height: 100vh;
+      background: url('images/hero.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+    }
+    /* Floral pattern overlay */
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://www.transparenttextures.com/patterns/floral-wallpaper.png') repeat center;
+      opacity: 0.25;
+      z-index: 1;
+    }
+    /* Gold gradient overlay */
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom right, rgba(255,215,0,0.3), rgba(255,223,186,0.3));
+      mix-blend-mode: overlay;
+      z-index: 2;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      max-width: 900px;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.45);
+      border-radius: 20px;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.4);
+      animation: fadeIn 3s ease;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
+      color: #f5f1e3;
+      text-shadow: 0 3px 6px rgba(0,0,0,0.5);
+    }
+    h2, h3 {
+      color: #555;
+    }
+    section {
+      padding: 60px 10%;
+      text-align: center;
+    }
+    .tribute {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+    .tribute img {
+      border-radius: 15px;
+      width: 320px;
+      height: auto;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    }
+    .message {
+      max-width: 500px;
+      text-align: left;
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.4s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    blockquote {
+      font-style: italic;
+      color: #444;
+      margin: 30px auto;
+      max-width: 800px;
+      position: relative;
+    }
+    blockquote::before, blockquote::after {
+      content: '“';
+      font-size: 3em;
+      color: gold;
+      position: absolute;
+    }
+    blockquote::before { left: -20px; top: -20px; }
+    blockquote::after { content: '”'; right: -20px; bottom: -20px; }
+    footer {
+      background: linear-gradient(to right, #f6e2b3, #f4d88d);
+      color: #333;
+      padding: 40px;
+      text-align: center;
+      font-size: 1.1em;
+      border-top: 2px solid #e1b866;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero-content">
+      <h1>30 Years of Eternal Love</h1>
+      <p style="font-size:1.5em; color:#fff;">“I only know true love exists after seeing how you loved each other. I can only pray to have a union like yours.”</p>
+    </div>
+  </header>
+
+  <section id="dad">
+    <h2>Tribute to Dad</h2>
+    <div class="tribute">
+      <img src="images/dad.jpg" alt="Dad" />
+      <div class="message">
+        <p>Your love, wisdom, and quiet strength live on in every heartbeat of this family. Even in your absence, your presence fills every corner of our lives. We remember you not with tears, but with gratitude for the love you gave so freely.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="mom">
+    <h2>Message to Mom</h2>
+    <div class="tribute">
+      <img src="images/mom.jpg" alt="Mom" />
+      <div class="message">
+        <p>Mom, your devotion and grace have been the steady light of our home. Your love is proof that forever exists. On this 30th anniversary, we celebrate you—for the laughter, the strength, and the way you’ve carried his memory with love and dignity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="quotes">
+    <h2>Quotes Celebrating Love</h2>
+    <blockquote>“Love is not about how many days, months, or years you’ve been together. It’s about how much you love each other every single day.”</blockquote>
+    <blockquote>“What greater thing is there for two human souls than to feel that they are joined for life—to strengthen each other in all labor, to rest on each other in all sorrow, to minister to each other in all pain.” — George Eliot</blockquote>
+    <blockquote>“True love stories never have endings.” — Richard Bach</blockquote>
+    <blockquote>“The best love is the kind that awakens the soul, that makes us reach for more, that plants the fire in our hearts and brings peace to our minds.”</blockquote>
+    <blockquote>“You don’t marry someone you can live with; you marry the person you can’t live without.”</blockquote>
+  </section>
+
+  <footer>
+    <p>Happy 30th Wedding Anniversary — Your love remains our greatest example of forever.</p>
+  </footer>
+</body>
+</html>
+

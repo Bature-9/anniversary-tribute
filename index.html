@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>30th Wedding Anniversary Tribute</title>
+
   <style>
     body {
       margin: 0;
@@ -12,6 +13,7 @@
       color: #333;
       overflow-x: hidden;
     }
+
     header {
       position: relative;
       height: 100vh;
@@ -23,7 +25,7 @@
       color: #fff;
       overflow: hidden;
     }
-    /* Floral pattern overlay */
+
     header::before {
       content: "";
       position: absolute;
@@ -35,7 +37,7 @@
       opacity: 0.25;
       z-index: 1;
     }
-    /* Gold gradient overlay */
+
     header::after {
       content: "";
       position: absolute;
@@ -47,6 +49,7 @@
       mix-blend-mode: overlay;
       z-index: 2;
     }
+
     .hero-content {
       position: relative;
       z-index: 3;
@@ -55,41 +58,59 @@
       background: rgba(0, 0, 0, 0.45);
       border-radius: 20px;
       box-shadow: 0 4px 25px rgba(0,0,0,0.4);
-      animation: fadeIn 3s ease;
+      animation: fadeIn 2.6s ease;
     }
+
     h1 {
       font-size: 3em;
       margin-bottom: 0.3em;
       color: #f5f1e3;
       text-shadow: 0 3px 6px rgba(0,0,0,0.5);
     }
-    h2, h3 {
-      color: #555;
-    }
+
     section {
       padding: 60px 10%;
       text-align: center;
     }
+
     .tribute {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       gap: 40px;
-      margin-bottom: 50px;
+      margin-top: 30px;
     }
+
     .tribute img {
       border-radius: 15px;
       width: 320px;
       height: auto;
       box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+      animation: fadeIn 2.5s ease;
     }
+
     .message {
-      max-width: 500px;
+      max-width: 550px;
       text-align: left;
-      font-size: 1.1em;
-      line-height: 1.6em;
+      font-size: 1.15em;
+      line-height: 1.7em;
+      animation: fadeIn 2.6s ease;
     }
+
+    .message p {
+      margin-bottom: 20px;
+    }
+
+    /* Gold Divider */
+    .divider {
+      width: 120px;
+      height: 3px;
+      background: linear-gradient(to right, #c6a34f, #f7e8b0, #c6a34f);
+      margin: 25px auto 0 auto;
+      border-radius: 2px;
+    }
+
     blockquote {
       font-style: italic;
       color: #444;
@@ -97,14 +118,15 @@
       max-width: 800px;
       position: relative;
     }
+
     blockquote::before, blockquote::after {
       content: '“';
       font-size: 3em;
       color: gold;
       position: absolute;
     }
-    blockquote::before { left: -20px; top: -20px; }
-    blockquote::after { content: '”'; right: -20px; bottom: -20px; }
+    blockquote::after { content: '”'; }
+
     footer {
       background: linear-gradient(to right, #f6e2b3, #f4d88d);
       color: #333;
@@ -113,51 +135,114 @@
       font-size: 1.1em;
       border-top: 2px solid #e1b866;
     }
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+    /* MOBILE OPTIMIZATION */
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2em; }
+      .hero-content { padding: 25px; }
+      .message { font-size: 1.05em; }
+      .tribute img { width: 85%; }
+      section { padding: 40px 6%; }
+    }
+
   </style>
 </head>
+
+
 <body>
   <header>
     <div class="hero-content">
       <h1>30 Years of Eternal Love</h1>
-      <p style="font-size:1.5em; color:#fff;">“I only know true love exists after seeing how you loved each other. I can only pray to have a union like yours.”</p>
+      <p style="font-size:1.4em; color:#fff;">“I only know true love exists after seeing how you loved each other. I can only pray to have a union like yours.”</p>
     </div>
   </header>
 
+  <!-- DAD SECTION -->
   <section id="dad">
     <h2>Tribute to Dad</h2>
+    <div class="divider"></div>
+
     <div class="tribute">
       <img src="https://raw.githubusercontent.com/Bature-9/anniversary-tribute/main/dad.jpg" alt="Dad" />
+
       <div class="message">
-        <p>Your love, wisdom, and quiet strength live on in every heartbeat of this family. Even in your absence, your presence fills every corner of our lives. We remember you not with tears, but with gratitude for the love you gave so freely.</p>
+        <p>
+          For the quiet sacrifices, the loud support, and the constant presence that shaped my life.
+          I’ve never known struggle because you carried the weight long before it could reach me.
+          You made sure I walked confidently, spoke boldly, and lived without fear.
+        </p>
+
+        <p>
+          The love you showed Mom, the partnership you both shared, and the way you raised me with
+          unity and purpose—it’s something rare. I don’t think I’ll ever know a love as steady and
+          enduring as yours. I’ll be lucky to experience even a fraction of it in my own life.
+        </p>
+
+        <p>
+          I’ve always felt like a first-class citizen because of the world you and Mom built around me.
+          Maybe it made me a bit sheltered, maybe a bit naïve—but it made me feel safe,
+          valued, and loved. And I’ll always appreciate you for that.
+        </p>
+
+        <p>
+          Thank you, Dad. For your strength, your guidance, your patience, and your heart.
+          I love you deeply, today and always.
+        </p>
       </div>
     </div>
   </section>
 
+
+  <!-- MOM SECTION -->
   <section id="mom">
     <h2>Message to Mom</h2>
+    <div class="divider"></div>
+
     <div class="tribute">
       <img src="https://raw.githubusercontent.com/Bature-9/anniversary-tribute/main/mom.jpg" alt="Mom" />
+
       <div class="message">
-        <p>Mom, your devotion and grace have been the steady light of our home. Your love is proof that forever exists. On this 30th anniversary, we celebrate you—for the laughter, the strength, and the way you’ve carried his memory with love and dignity.</p>
+        <p>
+          You shaped who I am in ways I’m only now starting to fully understand.
+          From showing up at every disciplinary hearing in Hillcrest—no matter how embarrassed
+          or tired you were—to defending me even when you also wanted to strangle me…
+          you loved me with a depth that cannot be explained.
+        </p>
+
+        <p>
+          You taught me compassion, patience, humor, and how to love loudly and fearlessly.
+          Your strength is the reason I stand tall. Your softness is the reason my heart still works.
+          And your love… that’s the standard I measure everything by.
+        </p>
+
+        <p>
+          I love you so much, Mom. Everything good in me started with you.
+        </p>
       </div>
     </div>
   </section>
 
+
+  <!-- QUOTES -->
   <section id="quotes">
     <h2>Quotes Celebrating Love</h2>
+    <div class="divider"></div>
+
     <blockquote>“Love is not about how many days, months, or years you’ve been together. It’s about how much you love each other every single day.”</blockquote>
-    <blockquote>“What greater thing is there for two human souls than to feel that they are joined for life—to strengthen each other in all labor, to rest on each other in all sorrow, to minister to each other in all pain.” — George Eliot</blockquote>
+    <blockquote>“What greater thing is there for two human souls than to feel that they are joined for life—to strengthen each other in all labor, to rest on each other in all sorrow…” — George Eliot</blockquote>
     <blockquote>“True love stories never have endings.” — Richard Bach</blockquote>
-    <blockquote>“The best love is the kind that awakens the soul, that makes us reach for more, that plants the fire in our hearts and brings peace to our minds.”</blockquote>
+    <blockquote>“The best love is the kind that awakens the soul… that plants the fire in our hearts and brings peace to our minds.”</blockquote>
     <blockquote>“You don’t marry someone you can live with; you marry the person you can’t live without.”</blockquote>
   </section>
 
   <footer>
     <p>Happy 30th Wedding Anniversary — Your love remains our greatest example of forever.</p>
   </footer>
+
 </body>
 </html>
